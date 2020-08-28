@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    color: rgba(0, 0, 0, .75);
+}
+
+.instructions {
+    text-align: center;
+    color: rgba(0, 0, 0, .75);
+}
+
+.instructions h3 {
+    margin: 30px 0;
+}
+
+.functions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.functions input {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 30px;
+    margin-left: 29px;
+}
+
+.functions button {
+    width: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.output {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.output ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.output li {
+    border: 2px solid black;
+	border-radius: 5px;
+    width: 400px;
+    background: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
