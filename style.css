@@ -60,3 +60,8 @@ body {
     padding: 10px 20px;
     margin-top: 20px;
 }
+
+.completed {
+    background: #51DF70 !important;
+    color: #00891E;
+}
