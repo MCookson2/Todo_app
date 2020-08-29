@@ -38,6 +38,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .output {
@@ -58,7 +59,17 @@ body {
     width: 400px;
     background: white;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.output button {
+    float: right;
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
 }
 
 .completed {

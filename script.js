@@ -11,13 +11,23 @@ function addListItem() {
 
     function changeCompleted() {    // function to change style of li after it's clicked.  Toggleable so if hit by mistake can undo.
         li.classList.toggle('completed')
+        delBtn.classList.toggle('completed')
     }
 
     li.addEventListener('click', changeCompleted)
-    
     list.appendChild(li)
     userInput.value = ''
 
+    // Delete button is added below.
+    let delBtn = document.createElement('button');
+    delBtn.appendChild(document.createTextNode('X'));
+    delBtn.setAttribute('id', 'delete')
+    li.appendChild(delBtn);
+    delBtn.addEventListener('click', deleteButton)
+    // Event listener call function for delete button, simply deletes li, have to access it through the parentNode as JS doesn't let DOM elements remove themselves.
+    function deleteButton() {
+        li.parentNode.removeChild(li)
+    }
 }
 
 function checkEmpty() {
